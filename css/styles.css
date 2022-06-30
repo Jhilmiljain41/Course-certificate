@@ -1,0 +1,38 @@
+/*.certificate-img{
+  background-image: url("/images/sample.jpg");
+  height: 600px;
+}*/
+.color{
+  background-color: rgb(213, 218, 146);
+  border-color: rgb(213, 218, 146);
+}
+.content{
+  font-size: 0.8rem;
+}
+.stars{
+  color:rgb(255, 136, 0);
+}
+.download{
+  color: black; 
+  border-color:black;
+}
+.dp{
+  height: 40px;
+  width: 40px;
+}
+.course-img{
+  height: 100%; 
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 950px) {
+  .course-img{
+    width:min-content;
+    height:90px;
+    float: left;
+    margin-bottom: 3rem;
+  }
+}
+.purple-color{
+  color: purple;
+}
