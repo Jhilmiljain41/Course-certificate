@@ -25,12 +25,15 @@
   width: 100%;
   margin-bottom: 0.5rem;
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 988px) {
   .course-img{
     width:min-content;
     height:90px;
     float: left;
     margin-bottom: 3rem;
+  }
+  .detail{
+    font-size: 0.9rem;
   }
 }
 .purple-color{
