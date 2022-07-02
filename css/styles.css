@@ -42,3 +42,14 @@
 #mainbody{
   margin-top: 70px;
 }
+.popover{
+  top: 3px;
+}
+.left-window{
+  background-color: rgb(32, 192, 11);
+}
+.add-now:hover{
+  background-color:rgb(32, 192, 11) ;
+  color: grey;
+  border-color: rgb(32, 192, 11);
+}
