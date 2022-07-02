@@ -375,19 +375,65 @@
               </div>
             </div>
             <div class="row">
-              <div class="d-grid col p-2">
-                <button type="button" class="btn btn-primary fs-6 px-2 py-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16" style="margin-right: 6px;">
-                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
-                  </svg> Share Certificate</button>
-              </div>
-              <div class="d-grid col p-2">
-                <button type="button" class="btn btn-outline-primary  px-2 py-1">
+              <div class="d-grid col p-1">
+                <button type="button" class="btn btn-outline-primary  px-2 py-1 myPopover" data-toggle="popover" data-placement="bottom"
+                data-trigger="focus"
+                data-html="true"
+                data-popover-content="#myPopoverContent">
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16" style="margin-right: 6px;">
                     <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
                     <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
                   </svg>Download Certificate</button>
+                  <div id="myPopoverContent" style="display: none;">
+                    <div id="mybtn" role="form">
+                    <button type="submit" class="btn btn-primary btn-sm content" id="confirm">Download as png</button>
+                    <button type="submit" class="btn btn-primary btn-sm content" id="deny">Download as pdf</button>
+                    </div>
+                  </div>
+              </div> 
+              <div class="d-grid col p-1">
+                <button type="button" class="btn btn-primary fs-6 px-2 py-1" data-toggle="modal" data-target="#exampleModal">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16" style="margin-right: 6px;">
+                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                  </svg> Share Certificate</button>
+
+                  <!--Share window-->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body p-0">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col left-window rounded-left text-white p-4">
+                                <h1 class="flex-fill pb-5" style="margin-bottom: 200px;">Build your profile using Certificates</h1>
+                                <span class="mt-5">
+                                  <p class="fst-italic">Many recruiters or hiring managers, their first
+                                  step after receiving a resume or job
+                                  application is to look up the candidate on
+                                  LinkedIn."</p>
+                                  <p class="text-secondary mt-8">Source: thebalancecareers.com</p>
+                                </span>
+                              </div>
+                              <div class="col right-window text-center p-4">
+                                <img src="images/sample.jpg" style="height: 350px; width: 400px;">
+                                <p>Now you can add your GUVI's
+                                  Course completion certificate in</p>
+                                  <span><img src="images/linkedin.png" style="height: 60px; width: 100px;"></span>
+                                  <p class="text-secondary">& also in other social media</p>
+                                  <button type="button" class="btn btn-outline-success add-now">Add Now</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
+            </div>
+            <div class="row">
+              <div class="col"></div>
+              
+              
             </div>
               <!--<h5>About the Course:</h5>
               <div>
@@ -538,6 +584,19 @@
   </script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+      <script>
+         $('.myPopover').popover({
+         html : true,
+         content: function() {
+          var elementId = $(this).attr("data-popover-content");
+          return $(elementId).html();
+         }
+         });
+      </script>
 </body>
 <script src="main/nav-dropdown.js"></script>
 </html>
