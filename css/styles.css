@@ -6,7 +6,7 @@
   background-color: rgb(213, 218, 146);
   border-color: rgb(213, 218, 146);
 }
-.content{
+.contain{
   font-size: 0.8rem;
 }
 .stars{
@@ -17,13 +17,19 @@
   border-color:black;
 }
 .dp{
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
 }
 .course-img{
   height: 100%; 
   width: 100%;
   margin-bottom: 0.5rem;
+}
+.box-detail{
+  padding: 1.5rem;
+}
+.btn-lg{
+  font-size: 1rem;
 }
 @media screen and (max-width: 988px) {
   .course-img{
@@ -34,6 +40,9 @@
   }
   .detail{
     font-size: 0.9rem;
+  }
+  .box-detail{
+    padding: 1rem;
   }
 }
 .purple-color{
