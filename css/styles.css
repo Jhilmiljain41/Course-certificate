@@ -28,6 +28,9 @@
 .box-detail{
   padding: 1.5rem;
 }
+.close-button1{
+  display:none;
+}
 .btn-lg{
   font-size: 1rem;
 }
@@ -43,6 +46,12 @@
   }
   .box-detail{
     padding: 1rem;
+  }
+  .close-button1{
+    display:block;
+  }
+  .close-button2{
+    display: none;
   }
 }
 .purple-color{
