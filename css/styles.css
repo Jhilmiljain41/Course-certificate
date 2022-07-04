@@ -2,12 +2,16 @@
   background-image: url("/images/sample.jpg");
   height: 600px;
 }*/
+body{
+  max-width: 1200px;
+  justify-content: center;
+}
 .color{
   background-color: rgb(213, 218, 146);
   border-color: rgb(213, 218, 146);
 }
 .contain{
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 .stars{
   color:rgb(255, 136, 0);
@@ -20,6 +24,10 @@
   height: 60px;
   width: 60px;
 }
+.detail-img{
+  height: 40px;
+  width: 40px;
+}
 .course-img{
   height: 100%; 
   width: 100%;
@@ -31,9 +39,7 @@
 .close-button1{
   display:none;
 }
-.btn-lg{
-  font-size: 1rem;
-}
+
 @media screen and (max-width: 988px) {
   .course-img{
     width:min-content;
@@ -54,6 +60,12 @@
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  body{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .purple-color{
   color: purple;
 }
@@ -70,4 +82,7 @@
   background-color:rgb(32, 192, 11) ;
   color: grey;
   border-color: rgb(32, 192, 11);
+}
+.modal-open{
+  overflow-y: hidden;
 }
