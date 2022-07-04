@@ -5,6 +5,7 @@
 body{
   max-width: 1200px;
   justify-content: center;
+  line-height: normal;
 }
 .color{
   background-color: rgb(213, 218, 146);
@@ -39,13 +40,19 @@ body{
 .close-button1{
   display:none;
 }
-
+.headings{
+  margin-bottom: 150px;
+}
 @media screen and (max-width: 988px) {
   .course-img{
     width:min-content;
     height:90px;
     float: left;
     margin-bottom: 3rem;
+    
+  }
+  .btn-sm{
+    font-size: 0.8rem;
   }
   .detail{
     font-size: 0.9rem;
@@ -58,6 +65,15 @@ body{
   }
   .close-button2{
     display: none;
+  }
+  .headings{
+    margin-bottom: 100px;
+  }
+  .modal-para{
+    margin-bottom: 2px;
+  }
+  .modal-btn{
+    margin-bottom: 4px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -82,7 +98,4 @@ body{
   background-color:rgb(32, 192, 11) ;
   color: grey;
   border-color: rgb(32, 192, 11);
-}
-.modal-open{
-  overflow-y: hidden;
 }
