@@ -1127,7 +1127,7 @@
   <section id="mainbody">
     <div class="container-fluid">
       <div class="row main-box mx-sm-0">
-        <div class="col-lg-8 ms-lg-3 my-3 ">
+        <div class="col-lg-8 ms-lg-3 my-3 px-4">
           <div class="border mb-2">
             <img src="images/sample.jpg" style='height: 100%; width: 100%; object-fit: contain'>
           </div>
@@ -1139,41 +1139,71 @@
         </div>
         <div class="col m-3 px-lg-0">
           <div class="instructor-details">
-            <div class="border rounded box-detail">
+            <div class="border rounded box-detail mb-1">
+              <div class="mb-2">
+                <img src="images/verified.jpg" class="detail-img me-1"/>
+              <img src="images/qr-code.png" class="detail-img me-1"/>
+              <img src="images/badge.png" class="detail-img me-1"/>
+              </div>
               <h5>Completed by </h5>
               <div class="mb-0 mt-3">
-                <img class="float-start dp rounded-circle me-2" src="images/dp.png"/>
+                <img class="float-start dp rounded-circle me-2" src="images/dp.png" style="object-fit: cover"/>
                 <p class="fw-bold mb-0">Chiranjeevi</p>
                   <p class="contain mb-0">Issued date: 29 July 2021</p>
                   <p class="contain">Graded Achieved: 95.69%</p>
               </div>
             </div>
-            <div class="row pt-1">
-              <div class="d-grid col p-1">
-                <button type="button" class="btn btn-outline-primary  px-2 py-1" data-toggle="modal" data-target=".bd-example-modal-sm">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16" style="margin-right: 6px;">
+            <div class="row pt-2 mx-0">
+              <div class="d-grid col p-0 pe-1">
+                <button type="button" class="btn btn-outline-primary btn-sm px-2 py-1" data-toggle="modal" data-target=".exampleModal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16" style="margin-right: 6px;">
                     <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
                     <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
                   </svg>Download Certificate</button>
-                  <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-sm">
+
+                  <div class="modal fade exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
                       <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title">Download Certificate as</h5>
-                          <div class="text-end mt-1">
-                            <button type="button" class="btn btn-white text-right" data-dismiss="modal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                            </svg></button>
-                          </div>
-                        </div>
-                        <div class="container-fluid my-3">
-                          
-                          <div class="row">
-                            <div class="col py-1 px-0 text-center">
-                              <button type="button" class="btn btn-primary btn-lg px-2 py-1">Download as png</button>
-                            </div>
-                            <div class="col py-1 px-0 text-center">
-                              <button type="button" class="btn btn-primary btn-lg px-2 py-1">Download as pdf</button>
+                        <div class="modal-body p-0">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col left-window rounded-left text-white p-4">
+                                <div class="text-end mt-1 close-button1">
+                                  <button type="button" class="btn btn-white text-right" data-dismiss="modal"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                  </svg></button>
+                                </div>
+                                <h1 class="flex-fill mt-3 pb-5" style="margin-bottom: 150px;">Build your profile using Certificates</h1>
+                                <span class="mt-3">
+                                  <p class="fst-italic">Many recruiters or hiring managers, their first
+                                  step after receiving a resume or job
+                                  application is to look up the candidate on
+                                  LinkedIn."</p>
+                                  <p class="text-secondary">Source: thebalancecareers.com</p>
+                                </span>
+                              </div>
+                              <div class="col right-window">
+                                <div class="text-end mt-1 close-button2">
+                                  <button type="button" class="btn btn-white text-right" data-dismiss="modal"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                  </svg></button>
+                                </div>
+                                <div class="text-center p-4 pt-0">
+                                  <img src="images/sample.jpg" style="height: 250px; width: 350px; margin-bottom: 1.5rem;">
+                                  <p class="mb-4">Now you can Download your Techsnap's
+                                  Course completion certificate in</p>
+                                  <div class="container-fluid my-3">
+                                    <div class="row">
+                                      <div class="col p-1 text-center d-grid">
+                                        <button type="button" class="btn btn-outline-success add-now px-2 py-1">Download as png</button>
+                                      </div>
+                                      <div class="col p-1 text-center d-grid">
+                                        <button type="button" class="btn btn-outline-success add-now px-2 py-1">Download as pdf</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1181,8 +1211,8 @@
                     </div>
                   </div>
               </div> 
-              <div class="d-grid col p-1">
-                <button type="button" class="btn btn-primary fs-6 px-2 py-1" data-toggle="modal" data-target="#exampleModal">
+              <div class="d-grid col p-0 ps-1">
+                <button type="button" class="btn btn-primary btn-sm px-2 py-1" data-toggle="modal" data-target="#exampleModal">
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16" style="margin-right: 6px;">
                     <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
                   </svg> Share Certificate</button>
@@ -1196,12 +1226,12 @@
                             <div class="row">
                               <div class="col left-window rounded-left text-white p-4">
                                 <div class="text-end mt-1 close-button1">
-                                  <button type="button" class="btn btn-white text-right" data-dismiss="modal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                  <button type="button" class="btn btn-white text-right" data-dismiss="modal"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
                                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                                   </svg></button>
                                 </div>
-                                <h1 class="flex-fill mt-3 pb-5" style="margin-bottom: 250px;">Build your profile using Certificates</h1>
-                                <span class="mt-5">
+                                <h1 class="flex-fill mt-3 pb-5" style="margin-bottom: 150px;">Build your profile using Certificates</h1>
+                                <span class="mt-4">
                                   <p class="fst-italic">Many recruiters or hiring managers, their first
                                   step after receiving a resume or job
                                   application is to look up the candidate on
@@ -1211,13 +1241,13 @@
                               </div>
                               <div class="col right-window">
                                 <div class="text-end mt-1 close-button2">
-                                  <button type="button" class="btn btn-white text-right" data-dismiss="modal"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                  <button type="button" class="btn btn-white text-right" data-dismiss="modal"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
                                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                                   </svg></button>
                                 </div>
                                 <div class="text-center p-4 pt-0">
-                                  <img src="images/sample.jpg" style="height: 300px; width: 350px;">
-                                  <p>Now you can add your GUVI's
+                                  <img src="images/sample.jpg" style="height: 250px; width: 350px;">
+                                  <p class="mb-1">Now you can add your Techsnap's
                                   Course completion certificate in</p>
                                   <span><img src="images/linkedin.png" style="height: 60px; width: 100px;"></span>
                                   <p class="text-secondary">& also in other social media</p>
@@ -1232,10 +1262,40 @@
                   </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col"></div>
-              
-              
+            <div class="">
+                <form>
+                    <div class="form-group mt-4">
+                      <label id="credentialID">
+                        <p class="h4">Credential ID</p>
+                      </label>
+                      <div class="row mt-2">
+                        <div class="col-lg-9">
+                          <input type="text" class="form-control mr-2 py-2 mb-2" id="credentialID" placeholder="Credential ID" value="" readonly />
+                        </div>
+                        <div class="col-lg-3 p-0">
+                          <a href="#" id="credentialID-btn" class="d-grid btn btn-primary contain py-2" data-placement="right">Copy ID</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg">
+                        <div class="form-group mb-3">
+                          <label id="credentialURL">
+                            <p class="h4">Credential URL</p>
+                          </label>
+                          <div class="row mt-2">
+                            <div class="col-lg-9 py-0">
+                              <input type="url" class="form-control mr-2 py-2 mb-2" id="credentialURL" placeholder="Credential URL" value="" readonly />
+                            </div>
+                            <div class="col-lg-3 p-0">
+                              <a href="#" id="credentialURL-btn" class="btn btn-primary d-grid contain py-2" data-placement="right">Copy
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </form>
             </div>
               <!--<h5>About the Course:</h5>
               <div>
@@ -1389,6 +1449,10 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById("credentialURL").value = window.location.href;
+        document.getElementById("credentialID").value = window.location.search;
+    </script>
 
 </body>
 <script src="main/nav-dropdown.js"></script>
