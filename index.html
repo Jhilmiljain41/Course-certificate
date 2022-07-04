@@ -1450,8 +1450,10 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script>
-        document.getElementById("credentialURL").value = window.location.href;
-        document.getElementById("credentialID").value = window.location.search;
+        var url = window.location.href;
+        document.getElementById("credentialURL").value = url;
+        var id = url.substring(url.lastIndexOf('/') + 1);
+        document.getElementById("credentialID").value = id;
     </script>
 
 </body>
