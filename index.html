@@ -20,7 +20,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body id="main-content">
   <section id="header">
     <div class="mainBody">
       <div class="nav-bar-desktop">
@@ -1127,8 +1127,8 @@
   <section id="mainbody">
     <div class="container-fluid">
       <div class="row main-box mx-sm-0">
-        <div class="col-lg-8 ms-lg-3 my-3 px-4">
-          <div class="border mb-2">
+        <div class="col-lg-8 my-3 px-4">
+          <div class="border border-2 mb-2">
             <img src="images/sample.jpg" style='height: 100%; width: 100%; object-fit: contain'>
           </div>
           <div class="detail text-center">
@@ -1155,7 +1155,7 @@
             </div>
             <div class="row pt-2 mx-0">
               <div class="d-grid col p-0 pe-1">
-                <button type="button" class="btn btn-outline-primary btn-sm px-2 py-1" data-toggle="modal" data-target=".exampleModal">
+                <button type="button" class="btn btn-outline-primary btn-sm px-2 py-1" data-toggle="modal" data-target=".exampleModal" onclick="document.getElementById('main-content').style.overflowY = 'hidden'">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16" style="margin-right: 6px;">
                     <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
                     <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
@@ -1167,13 +1167,13 @@
                         <div class="modal-body p-0">
                           <div class="container-fluid">
                             <div class="row">
-                              <div class="col left-window rounded-left text-white p-4">
+                              <div class="col left-window rounded-left text-white p-lg-4">
                                 <div class="text-end mt-1 close-button1">
                                   <button type="button" class="btn btn-white text-right" data-dismiss="modal"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
                                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                                   </svg></button>
                                 </div>
-                                <h1 class="flex-fill mt-3 pb-5" style="margin-bottom: 150px;">Build your profile using Certificates</h1>
+                                <h1 class="flex-fill mt-lg-3 pb-lg-5 headings">Build your profile using Certificates</h1>
                                 <span class="mt-3">
                                   <p class="fst-italic">Many recruiters or hiring managers, their first
                                   step after receiving a resume or job
@@ -1188,7 +1188,7 @@
                                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                                   </svg></button>
                                 </div>
-                                <div class="text-center p-4 pt-0">
+                                <div class="text-center p-lg-4 pt-lg-0 pt-2">
                                   <img src="images/sample.jpg" style="height: 250px; width: 350px; margin-bottom: 1.5rem;">
                                   <p class="mb-4">Now you can Download your Techsnap's
                                   Course completion certificate in</p>
@@ -1224,13 +1224,13 @@
                         <div class="modal-body p-0">
                           <div class="container-fluid">
                             <div class="row">
-                              <div class="col left-window rounded-left text-white p-4">
+                              <div class="col left-window rounded-left text-white p-lg-4">
                                 <div class="text-end mt-1 close-button1">
                                   <button type="button" class="btn btn-white text-right" data-dismiss="modal"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
                                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                                   </svg></button>
                                 </div>
-                                <h1 class="flex-fill mt-3 pb-5" style="margin-bottom: 150px;">Build your profile using Certificates</h1>
+                                <h1 class="flex-fill mt-lg-3 pb-lg-5 headings">Build your profile using Certificates</h1>
                                 <span class="mt-4">
                                   <p class="fst-italic">Many recruiters or hiring managers, their first
                                   step after receiving a resume or job
@@ -1245,13 +1245,13 @@
                                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                                   </svg></button>
                                 </div>
-                                <div class="text-center p-4 pt-0">
+                                <div class="text-center p-lg-4 pt-lg-0 pt-2">
                                   <img src="images/sample.jpg" style="height: 250px; width: 350px;">
-                                  <p class="mb-1">Now you can add your Techsnap's
+                                  <p class="mb-lg-1 modal-para">Now you can add your Techsnap's
                                   Course completion certificate in</p>
                                   <span><img src="images/linkedin.png" style="height: 60px; width: 100px;"></span>
-                                  <p class="text-secondary">& also in other social media</p>
-                                  <button type="button" class="btn btn-outline-success add-now">Add Now</button>
+                                  <p class="text-secondary modal-para">& also in other social media</p>
+                                  <button type="button" class="btn btn-outline-success add-now modal-btn">Add Now</button>
                                 </div>
                               </div>
                             </div>
@@ -1272,7 +1272,7 @@
                         <div class="col-lg-9">
                           <input type="text" class="form-control mr-2 py-2 mb-2 text-secondary" id="credentialID" placeholder="Credential ID" value="" readonly />
                         </div>
-                        <div class="col-lg-3 p-0">
+                        <div class="col-lg-3 p-lg-0 copy">
                           <a href="#" id="credentialID-btn" class="d-grid btn btn-primary contain py-2" data-placement="right">Copy ID</a>
                         </div>
                       </div>
@@ -1287,7 +1287,7 @@
                             <div class="col-lg-9 py-0">
                               <input type="url" class="form-control mr-2 py-2 mb-2 text-secondary" id="credentialURL" placeholder="Credential URL" value="" readonly />
                             </div>
-                            <div class="col-lg-3 p-0">
+                            <div class="col-lg-3 p-lg-0">
                               <a href="#" id="credentialURL-btn" class="btn btn-primary d-grid contain py-2" data-placement="right">Copy
                               </a>
                             </div>
